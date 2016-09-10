@@ -94,6 +94,28 @@ $(function () {
     for (var _i = 1; _i < 10; _i++) {
         _loop(_i);
     }
+
+    /*---foot-nav---*/
+    {
+        (function () {
+            var init = function init() {
+                for (var _i3 = 0; _i3 < foot_nav.length; _i3++) {
+                    $(".friend-list").eq(_i3).removeClass("friend-show");
+                    foot_nav.eq(_i3).removeClass("hov");
+                }
+            };
+
+            var foot_nav = $(".friend-nav a");
+            for (var _i2 = 0; _i2 < foot_nav.length; _i2++) {
+                foot_nav.eq(_i2).data("num", _i2);
+            }
+            foot_nav.hover(function () {
+                init();
+                $(this).addClass("hov");
+                $(".friend-list").eq($(this).data("num")).addClass("friend-show");
+            }, function () {});
+        })();
+    }
 }); //end
 
 //# sourceMappingURL=common-compiled.js.map

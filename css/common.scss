@@ -36,7 +36,7 @@
   margin: auto;
 }
 
-body, p, h1, h2, ul, li, input {
+body, p, h1, h2, h3, ul, li, input, dl, dt, dd {
   margin: 0;
   padding: 0;
 }
@@ -337,7 +337,7 @@ $i: 12;
   margin-bottom: 35px;
 }
 
-.main-first {
+.main-first, .main-fouth, .main-fifth {
   @extend .main-wrap;
   @extend .clear;
 }
@@ -614,25 +614,28 @@ $b: banner-ad;
 }
 
 .title {
-  font-size: 0;
-  height: 70px;
+  height: 50px;
+  margin-top: 22px;
   i {
+    float: left;
     width: 11px;
     height: 34px;
     background: #00a151;
     margin-right: 11px;
   }
   h2 {
-    display: inline-block;
+    float: left;
     font-weight: normal;
-    vertical-align: middle;
-  }
-  a {
-    line-height: 70px;
-    font-size: 30px;
-    &:hover {
-      color: #00a151;
+    a {
+      font-size: 30px;
+      &:hover {
+        color: #00a151;
+      }
     }
+  }
+  p {
+    float: left;
+    margin: 16px 0 0 18px;
   }
 }
 
@@ -669,4 +672,409 @@ $b: banner-ad;
 
 .hid {
   display: none;
+}
+
+.title-nav {
+  float: right;
+  line-height: 34px;
+  font-size: 12px;
+  color: #999;
+  li {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  span {
+    margin: 0 11px;
+  }
+  a {
+    color: #999;
+    &:hover {
+      color: #00a151;
+    }
+  }
+}
+
+.discus-contain {
+  @extend .clear;
+}
+
+.discus-l, .discus-m, .discus-r {
+  float: left;
+  @include bd(1, #ececec);
+}
+
+.discus-m, .discus-r {
+  border-left: none;
+}
+
+.discus-box {
+  width: 400px;
+  height: 214px;
+  padding: 0 20px 20px 20px;
+}
+
+.hot, .complaint {
+  @include bd(1, #ececec, -bottom);
+}
+
+.discus-title {
+  height: 60px;
+  line-height: 60px;
+  h3, span {
+    float: left;
+  }
+  h3 {
+    a {
+      font-size: 18px;
+    }
+  }
+  span {
+    font-size: 14px;
+    color: #999;
+    margin-left: 12px;
+  }
+  p {
+    float: right;
+  }
+}
+
+.discus-detail {
+  li {
+    height: 32px;
+    line-height: 32px;
+  }
+}
+
+.name, .respond-nums {
+  float: right;
+  font-size: 12px;
+  color: #999;
+}
+
+.detail-list {
+  float: left;
+  width: 330px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+  a {
+    font-size: 14px;
+    color: #666;
+    &:hover {
+      color: #00a151;
+    }
+  }
+}
+
+.title-r {
+  height: 52px;
+  line-height: 52px;
+  h3 {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: normal;
+    font-size: 18px;
+  }
+  a {
+    color: #999;
+    float: right;
+  }
+  a {
+
+  }
+}
+
+.discus-r {
+  width: 266px;
+  height: 465px;
+  padding: 0 20px 4px 20px;
+}
+
+.prompt-sign, .prompt-cate {
+  float: left;
+}
+
+.prompt li {
+  height: 75px;
+  margin-bottom: 28px;
+}
+
+.prompt-sign {
+  a {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    width: 96px;
+    height: 75px;
+    border-radius: 10px;
+    margin-right: 12px;
+    text-align: center;
+    line-height: 75px;
+  }
+}
+
+.tuan a {
+  background: #2dca85;
+}
+
+.prompt-cate {
+  p {
+    line-height: 38px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  span {
+    color: #999;
+  }
+}
+
+.design-l a, .design-r a {
+  float: left;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.design-l {
+  float: left;
+  a {
+    width: 400px;
+    height: 433px;
+  }
+  img {
+    height: 433px;
+  }
+}
+
+.design-cover {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  background-color: rgba(0, 0, 0, .4);
+  color: #fff;
+  text-align: center;
+}
+
+.design-rt {
+  a {
+    position: relative;
+    width: 260px;
+    height: 216px;
+    margin: 0 0 1px 1px;
+  }
+  img {
+    height: 216px;
+  }
+}
+
+.design-rb {
+  a {
+    position: relative;
+    width: 390px;
+    height: 216px;
+    margin-left: 1px;
+    overflow: hidden;
+  }
+  img {
+    width: 390px;
+  }
+}
+
+.lesson-box {
+  float: left;
+  width: 280px;
+  height: 335px;
+  padding: 8px;
+  border: 1px solid #ececec;
+  border-left: none
+}
+
+.lesson-img {
+  display: block;
+  width: 280px;
+  height: 140px;
+  overflow: hidden;
+}
+
+.lesson-detail dt {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+
+}
+
+.lesson-detail dd {
+  padding-left: 10px;
+  i {
+    width: 6px;
+    height: 6px;
+    background: #ddd;
+    border-radius: 3px;
+    margin-right: 8px;
+  }
+  a {
+    line-height: 32px;
+    font-size: 14px;
+  }
+}
+
+.lesson-l {
+  border-left: 1px solid #ececec
+}
+
+.lesson-detail a {
+  &:hover {
+    color: #00a151;
+  }
+}
+
+.foot-logo {
+  @extend .wrap;
+  font-size: 0;
+  margin-top: 38px;
+  a {
+    margin-right: 22px;
+  }
+  .last {
+    @include noMargin;
+  }
+}
+
+.footer {
+  @extend .wrap;
+  padding-bottom: 70px;
+}
+
+.friend-nav {
+  margin: 38px 0 10px 0;
+  li {
+    height: 30px;
+    margin-right: 30px;
+    display: inline-block;
+  }
+  a {
+    display: block;
+    height: 28px;
+    line-height: 28px;
+  }
+}
+
+.hov {
+  color: #666;
+  border-bottom: 2px solid #00a151;
+}
+
+.friend-list {
+  font-size: 0;
+  display: none;
+  li {
+    display: inline-block;
+    line-height: 20px;
+  }
+  a {
+    font-size: 12px;
+    margin-right: 10px;
+    color: #999;
+  }
+}
+
+.friend-show {
+  display: block;
+}
+
+.ground {
+  font-size: 12px;
+  color: #999;
+  background: #1f1f1f;
+  a {
+    color: #fff;
+    &:hover{
+      color:#ff9100;
+    }
+  }
+}
+
+.ground-top {
+  padding: 20px 0;
+  li {
+    display: inline-block;
+    margin-right: 52px;
+  }
+  i {
+    display: block;
+    margin: 0 auto 10px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@for $i from 1 to 11 {
+  .g#{$i} {
+    background: url("../img/header_sprites.png") 0 -320px;
+  }
+}
+
+.ground-mid {
+  padding: 14px 0;
+  @include bd(1, #353535, -top);
+  a {
+    font-size: 12px;
+    color: #999;
+    line-height: 24px;
+  }
+}
+
+.gm-ul {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.contact li {
+  line-height: 24px;
+}
+
+.qrcode {
+  float: right;
+  padding-top: 14px;
+  img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.qr-describe {
+  float: right;
+  margin: 20px 0 0 5px;
+  line-height: 20px;
+}
+
+.ground-bottom {
+  padding: 20px 0;
+  @include bd(1, #353535, -top);
+}
+
+.ground-nav {
+  font-size: 0;
+  li {
+    display: inline-block;
+  }
+  span {
+    font-size: 12px;
+    margin:0 5px;
+  }
+  a {
+    font-size: 12px;
+    color: #999;
+  }
+}
+
+.copyright{
+  margin-top: 10px;
+  color:#666;
 }

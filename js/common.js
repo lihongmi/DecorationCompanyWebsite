@@ -85,4 +85,26 @@ $(function () {
             $(".step" + i + " img").eq(0).removeClass("hid");
         });
     }
+
+
+    /*---foot-nav---*/
+    {
+        let foot_nav = $(".friend-nav a");
+        for (let i = 0; i < foot_nav.length; i++) {
+            foot_nav.eq(i).data("num", i);
+        }
+        foot_nav.hover(function () {
+            init();
+            $(this).addClass("hov");
+            $(".friend-list").eq($(this).data("num")).addClass("friend-show");
+        }, function () {
+        });
+
+        function init(){
+            for (let i=0;i<foot_nav.length;i++){
+                $(".friend-list").eq(i).removeClass("friend-show");
+                foot_nav.eq(i).removeClass("hov");
+            }
+        }
+    }
 });//end

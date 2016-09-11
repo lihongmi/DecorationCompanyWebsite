@@ -65,6 +65,9 @@ i {
 .fs16 {
   font-size: 16px; }
 
+.no-margin {
+  margin: 0 !important; }
+
 .top-banner {
   position: relative;
   display: block;
@@ -230,7 +233,7 @@ i {
   position: relative;
   float: left;
   z-index: 5; }
-  .outer-li a {
+  .outer-li > a {
     display: block;
     padding: 0 20px;
     height: 38px;
@@ -253,11 +256,15 @@ i {
   border: 2px solid #01813f;
   border-right: none; }
   .nav-slide a {
+    display: block;
+    width: 100%;
     height: 36px;
     line-height: 36px;
     font-size: 12px;
     text-align: center;
     color: #333; }
+    .nav-slide a:hover {
+      background: #eee; }
 
 .home a {
   color: white;

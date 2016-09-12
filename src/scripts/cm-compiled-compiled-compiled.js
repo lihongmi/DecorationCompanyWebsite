@@ -684,7 +684,7 @@ $(function () {
             $.getJSON('http://passport.17house.com/login/Wxtest?key=' + random + '&callback=?', function (data) {
                 if (data) {
                     clearInterval(timer);
-                    $('.js-close').click();
+                    $('.scripts-close').click();
                     try {
                         $.getJSON($.trim(data) + '/?callback=?', function (data) {
                             $('body').append(data);
@@ -708,14 +708,16 @@ $(function () {
         clearInterval(timer);
     });
     onlineSys.Relocation();
-    var sc_a = '<link rel="stylesheet" href="http://s1.17house.com/common/Voucher_red/css/Red_Voucher.css" />',
-        sc_b = '<script src="http://s1.17house.com/common/Voucher_red/js/json2.js"></script>',
-        sc_c = '<script src="http://s1.17house.com/common/Voucher_red/js/Red_Voucher.js"></script>';
+    var sc_a = '<link rel="stylesheet" href="http://s1.17house.com/common/Voucher_red/styles/Red_Voucher.styles" />',
+        sc_b = '<script src="http://s1.17house.com/common/Voucher_red/scripts/json2.scripts"></script>',
+        sc_c = '<script src="http://s1.17house.com/common/Voucher_red/scripts/Red_Voucher.scripts"></script>';
     $(sc_a).appendTo($("head").eq(0));
     $(sc_b).appendTo($("head").eq(0));
     $(sc_c).appendTo($("head").eq(0));
 });
 
-//# sourceMappingURL=cm-compiled.js.map
+//# sourceMappingURL=cm-compiled.scripts.map
 
-//# sourceMappingURL=cm-compiled-compiled.js.map
+//# sourceMappingURL=cm-compiled-compiled.scripts.map
+
+//# sourceMappingURL=cm-compiled-compiled-compiled.js.map

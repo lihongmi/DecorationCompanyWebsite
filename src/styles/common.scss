@@ -105,7 +105,7 @@ $i: 12;
   position: relative;
   display: block;
   height: 70px;
-  background: url(../img/top_banner.jpg) 50% 0;
+  background: url(../../img/top_banner.jpg) 50% 0;
   a:not(.iclose) {
     display: block;
     height: 70px;
@@ -120,9 +120,9 @@ $i: 12;
   display: block;
   width: 26px;
   height: 26px;
-  background: url("../img/close.png");
+  background: url("../../img/close.png");
   &:hover {
-    background: url("../img/close-h.png");
+    background: url("../../img/close-h.png");
   }
 }
 
@@ -168,7 +168,7 @@ $i: 12;
     width: 11px;
     height: 14px;
     margin: 0 0 0 8px;
-    background: url(../img/header_sprites.png);
+    background: url(../../img/header_sprites.png);
   }
 }
 
@@ -193,7 +193,7 @@ $i: 12;
     width: 7px;
     height: 4px;
     margin-left: 4px;
-    background: url(../img/header_sprites.png)  -34px top;
+    background: url(../../img/header_sprites.png)  -34px top;
   }
 }
 
@@ -215,7 +215,7 @@ $i: 12;
     display: block;
     width: 135px;
     height: 52px;
-    background: url("../img/logo.png");
+    background: url("../../img/logo.png");
     text-indent: -9999px;
   }
   margin-right: 40px;
@@ -225,7 +225,7 @@ $i: 12;
   @extend .fl;
   width: 163px;
   height: 50px;
-  background: url("../img/logor.png");
+  background: url("../../img/logor.png");
 }
 
 .search {
@@ -254,7 +254,7 @@ $i: 12;
     width: 7px;
     height: 4px;
     margin-left: 14px;
-    background: url(../img/header_sprites.png) no-repeat -34px top;
+    background: url(../../img/header_sprites.png) no-repeat -34px top;
   }
 }
 
@@ -315,7 +315,7 @@ $i: 12;
   i {
     width: 9px;
     height: 6px;
-    background: url(../img/header_sprites.png) no-repeat left -44px;
+    background: url(../../img/header_sprites.png) no-repeat left -44px;
     margin-left: 12px;
   }
 }
@@ -384,7 +384,7 @@ $i: 12;
   i {
     width: 29px;
     height: 29px;
-    background: url(../img/header_sprites.png) no-repeat right top;
+    background: url(../../img/header_sprites.png) no-repeat right top;
     margin-right: 6px;
   }
   a {
@@ -601,11 +601,11 @@ $i: 12;
 
 .next {
   right: 0;
-  background: url(../img/right.png);
+  background: url(../../img/right.png);
 }
 
 .prev {
-  background: url(../img/left.png);
+  background: url(../../img/left.png);
 }
 
 $b: banner-ad;
@@ -639,15 +639,15 @@ $b: banner-ad;
 }
 
 .#{$b}-l {
-  background: url(../img/b-bottom1.jpg) no-repeat left 36px;
+  background: url(../../img/b-bottom1.jpg) no-repeat left 36px;
 }
 
 .#{$b}-m {
-  background: url(../img/b-bottom2.jpg) no-repeat left 45px;
+  background: url(../../img/b-bottom2.jpg) no-repeat left 45px;
 }
 
 .#{$b}-r {
-  background: url(../img/b-bottom3.png) no-repeat left 50px;
+  background: url(../../img/b-bottom3.png) no-repeat left 50px;
 }
 
 .price {
@@ -702,19 +702,19 @@ $b: banner-ad;
 }
 
 .i1 {
-  background: url("../img/header_sprites.png") no-repeat 0 -149px;
+  background: url("../../img/header_sprites.png") no-repeat 0 -149px;
 }
 
 .i2 {
-  background: url("../img/header_sprites.png") no-repeat 0 -182px;
+  background: url("../../img/header_sprites.png") no-repeat 0 -182px;
 }
 
 .i3 {
-  background: url("../img/header_sprites.png") no-repeat 0 -217px;
+  background: url("../../img/header_sprites.png") no-repeat 0 -217px;
 }
 
 .i4 {
-  background: url("../img/header_sprites.png") no-repeat 0 -251px;
+  background: url("../../img/header_sprites.png") no-repeat 0 -251px;
 }
 
 .special-second {
@@ -1149,7 +1149,7 @@ $b: banner-ad;
 
 @for $i from 1 to 11 {
   .g#{$i} {
-    background: url("../img/header_sprites.png") 0 -320px;
+    background: url("../../img/header_sprites.png") 0 -320px;
   }
 }
 
